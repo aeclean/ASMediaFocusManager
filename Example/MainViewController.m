@@ -53,7 +53,7 @@ static CGFloat const kMaxOffset = 20;
 	// Do any additional setup after loading the view, typically from a nib.
     
     self.mediaNames = @[@"1f.jpg", @"2f.jpg", @"3f.mp4", @"4f.jpg"];
-    self.mediaFocusManager = [[ASMediaFocusManager alloc] init];
+    self.mediaFocusManager = [[ASMediaFocusManager alloc] initWithCloseTitle:@"Fechar"];
     self.mediaFocusManager.delegate = self;
     self.mediaFocusManager.elasticAnimation = YES;
     self.mediaFocusManager.focusOnPinch = YES;
